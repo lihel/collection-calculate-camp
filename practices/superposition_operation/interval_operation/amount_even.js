@@ -1,8 +1,13 @@
 'use strict';
 
 function amount_even(collection) {
-
-  //在这里写入代码
+  let sum = 0;
+  collection.map((n)=> {
+    if (n % 2 == 0) {
+      sum += n;
+    }
+  });
+  return sum;
 }
 
 module.exports = amount_even;
